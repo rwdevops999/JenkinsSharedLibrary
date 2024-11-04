@@ -1,3 +1,6 @@
+/**
+* mail html body (red for failure, green for success) to recipient (config:to) and attach eventually the log
+*/
 def call(Map config = [:]) {
     def status = currentBuild.result ? (currentBuild.result == 'SUCCESS' ? 'SUCCESS' : 'FAILURE') : 'NOTIFICATION'
     def htmlBody = libraryResource 'mail-template.html'
