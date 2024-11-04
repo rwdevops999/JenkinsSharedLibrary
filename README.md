@@ -8,6 +8,16 @@
 
 send extended email notification to receipient
 
-> > steps {
-> > mailTo(to: "rudi.welter@gmail.com", attachLog: false)
-> > }
+```Jenkins
+    mailTo(to: "rudi.welter@gmail.com", attachLog: false)
+```
+
+## logMessage
+
+log message with date/time
+
+```jenkins
+    logMessage("test");
+```
+
+> > 11/04/2014 18:50:23 test
